@@ -6,6 +6,7 @@ CREATE TABLE USER (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	rol INT,
 	name VARCHAR(100),
+	password VARCHAR(100),
 	email VARCHAR(100)
 );
 	
@@ -39,5 +40,5 @@ CREATE TABLE CART (
 	id_user INT,
 	id_item INT,
 	FOREIGN KEY (id_user) REFERENCES user (id),
-	FOREIGN KEY (id_item) REFERENCES item (id)superscan
+	FOREIGN KEY (id_item) REFERENCES item (id)
 );
