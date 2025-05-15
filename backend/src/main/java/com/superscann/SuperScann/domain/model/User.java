@@ -1,6 +1,6 @@
-package com.superscann.SuperScann.controller.model;
+package com.superscann.SuperScann.domain.model;
 
-public class UserWeb {
+public class User {
     private int id;
     private int rol; //0 -> Master, 1 -> Modder, 2 -> User
     private String name;
