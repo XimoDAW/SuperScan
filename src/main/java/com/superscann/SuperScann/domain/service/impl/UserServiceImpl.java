@@ -16,6 +16,6 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
     @Override
     public User findById(int id) {
-        return userMapper.toDomain(userRepository.findById(1));
+        return userMapper.toDomain(userRepository.findById(id));
     }
 }
